@@ -1,12 +1,13 @@
 # How to build and install
-- Make sure you have Node v10.16.2
+- Make sure you have Node v8.17.0
 - Make sure you have installed Npm v6.9.0
 - Run npm i
 - Run npm run dist
 - Done! You can find the files in /dist in the root (for Chrome, Edge, Firefox and Opera)
 
 # Errors
-- If you happen to get 'npm ERR! cb() never called!'. Please try npm cache clean since you might be switching between npm registries
+- 'npm ERR! cb() never called!'. Please try npm cache clean since you might be switching between npm registries
+- 'configure: error: no acceptable C compiler found in $PATH.'. Please install apt-get install build-essential
 
 # MetaMask Browser Extension
 [![Build Status](https://circleci.com/gh/MetaMask/metamask-extension.svg?style=shield&circle-token=a1ddcf3cd38e29267f254c9c59d556d513e3a1fd)](https://circleci.com/gh/MetaMask/metamask-extension) [![Coverage Status](https://coveralls.io/repos/github/MetaMask/metamask-extension/badge.svg?branch=master)](https://coveralls.io/github/MetaMask/metamask-extension?branch=master) [![Stories in Ready](https://badge.waffle.io/MetaMask/metamask-extension.png?label=in%20progress&title=waffle.io)](https://waffle.io/MetaMask/metamask-extension)
