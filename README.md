@@ -1,9 +1,10 @@
-# How to build and install
-- Make sure you have Node v10.16.2
-- Make sure you have installed Npm v6.9.0
-- Run npm i
-- Run npm run dist
-- Done! You can find the files in /dist in the root (for Chrome, Edge, Firefox and Opera)
+## How to build and install (Ubuntu 18.04.4)
+- Make sure you have [Node.js](https://nodejs.org) v10.19.0
+- Make sure you have installed Npm 6.13.4
+- Install build essentials: `sudo apt install build-essential`
+- Install dependencies: `npm install`
+- Build packages: `npm run dist`
+- Done! You can find the files in `/dist` in the root (for Chrome, Edge, Firefox and Opera)
 
 # Errors
 - 'npm ERR! cb() never called!'. Please try npm cache clean since you might be switching between npm registries
@@ -20,20 +21,6 @@ To learn how to develop MetaMask-compatible applications, visit our [Developer D
 
 To learn how to contribute to the MetaMask project itself, visit our [Internal Docs](https://github.com/MetaMask/metamask-extension/tree/develop/docs).
 
-## Building locally
-
-- Install [Node.js](https://nodejs.org) version 8 and the latest available npm@6
-    - If you are using [nvm](https://github.com/creationix/nvm#installation) (recommended) running `nvm use` will automatically choose the right node version for you.
-    - If you install Node.js manually, ensure you're using npm@6
-        - Install npm@6 using `npm install -g npm@6`
-- Install dependencies: `npm install`
-    - If you have issues with node-sass compilation, try `npm rebuild node-sass`
-- Install gulp globally with `npm install -g gulp-cli`.
-- Build the project to the `./dist/` folder with `gulp build`.
-- Optionally, to rebuild on file changes, run `gulp dev`.
-- To package .zip files for distribution, run `gulp zip`, or run the full build & zip with `gulp dist`.
-
- Uncompressed builds can be found in `/dist`, compressed builds can be found in `/builds` once they're built.
 
 ## Contributing
 
