@@ -1,5 +1,5 @@
 # How to build and install
-- Make sure you have Node v8.17.0
+- Make sure you have Node v10.16.2
 - Make sure you have installed Npm v6.9.0
 - Run npm i
 - Run npm run dist
