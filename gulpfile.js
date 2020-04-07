@@ -608,6 +608,10 @@ function bundleTask (opts) {
         .pipe(sourcemaps.write(opts.sourceMapDir))
     }
 
+    // Prevent absolute paths in JS files
+    replaceDir = path.join(__dirname)
+    buildStream = buildStream.pipe(replace(replaceDir, './'))
+
     // write completed bundles
     opts.destinations.forEach((dest) => {
       buildStream = buildStream.pipe(gulp.dest(dest))
